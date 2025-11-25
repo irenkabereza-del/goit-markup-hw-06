@@ -37,8 +37,73 @@
                 </li>
             </ul>
         </address>
-        </div>
-       </header>
+<button class="burger-btn" type="button"><svg class="burger-icon" width="24" height="24">
+                    <use href = "./images/icons.svg#icon-burger"></use>
+                </svg>
+                </button>
+                </div>
+        <div class="mobile-menu">
+<div class="container mobile-menu-container">
+    <button class="mobile-menu-close"><svg class="icon-close" width="8" height="8">
+                    <use href = "./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+    <nav class="header-nav-mobile">
+<ul class="nav-list-mobile">
+        <li class="nav-item-mobile"><a class="nav-link-mobile-studio" href="./index.html">Studio</a></li>
+        <li class="nav-item-mobile"><a class="nav-link-mobile" href="">Portfolio</a></li>
+        <li class="nav-item-mobile"><a class="nav-link-mobile" href="">Contacts</a></li>
+        </ul>
+    </nav>
+    <address class="contacts-mobile">
+            <ul class="contacts-list-mobile">
+                <li class="contacts-item-mobile">
+<a class="email-link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                 <li class="contacts-item-mobile">
+<a class="tel-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+            </ul>
+        </address>
+    <div>
+ <ul class="social-networks-mobile">
+<li class="icon-social-networks-mobile">
+    <a class="social-networks-link-mobile" href="https://www.instagram.com/">
+     <svg class="social-networks-icon-mobile" width="16" height="16">
+                    <use href = "./images/icons.svg#icon-instagram"></use>
+                </svg>
+                </a>
+</li>
+<li class="icon-social-networks-mobile">
+    <a class="social-networks-link-mobile" href="https://pro.x.com/">
+     <svg class="social-networks-icon-mobile" width="16" height="16">
+                    <use href = "./images/icons.svg#icon-twitter"></use>
+                </svg>
+                </a>
+</li>
+<li class="icon-social-networks-mobile">
+    <a class="social-networks-link-mobile" href="https://www.facebook.com/reg/?locale=uk_UA">
+     <svg class="social-networks-icon-mobile" width="16" height="16">
+                    <use href = "./images/icons.svg#icon-facebook"></use>
+                </svg>
+                </a>
+</li>
+<li class="icon-social-networks-mobile">
+    <a class="social-networks-link-mobile" href="https://ua.linkedin.com/">
+     <svg class="social-networks-icon-mobile" width="16" height="16">
+                    <use href = "./images/icons.svg#icon-linkedin"></use>
+                </svg>
+                </a>
+</li>
+                </ul>
+    </div>
+</div>
+</div>
+  
+
+      
+       
+    </header>
        <!-- main -->
        <main>
         <!-- section-hero -->
@@ -100,7 +165,9 @@ problem to walk away with the perfect and creative solution.</p>
     <ul class="team-list">
         <!-- Mark Guerrero -->
         <li class="personal-information">
-            <img class="personal-photo" src="./images/img-3.jpg" alt="Mark Guerrero" width="264" height="260">
+            <img class="personal-photo"
+            srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
+             src="./images/img-3.jpg" alt="Mark Guerrero" width="264" height="260">
             <div class="personal-information-container">
             <h3 class="personal-name">Mark Guerrero</h3>
             <p class="description-proffesion">Product Designer</p>
@@ -138,7 +205,9 @@ problem to walk away with the perfect and creative solution.</p>
         </li>
 <!-- Tom Ford -->
 <li class="personal-information">
-            <img class="personal-photo" src="./images/img-2.jpg" alt="Tom Ford" width="264" height="260">
+            <img class="personal-photo" 
+            srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
+            src="./images/img-2.jpg" alt="Tom Ford" width="264" height="260">
             <div class="personal-information-container">
             <h3 class="personal-name">Tom Ford</h3>
             <p class="description-proffesion">Frontend Developer</p>
@@ -176,7 +245,9 @@ problem to walk away with the perfect and creative solution.</p>
         </li>
         <!-- Camila Garcia -->
          <li class="personal-information">
-            <img class="personal-photo" src="./images/img-1.jpg" alt="Camila Garcia" width="264" height="260">
+            <img class="personal-photo" 
+            srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
+            src="./images/img-1.jpg" alt="Camila Garcia" width="264" height="260">
           <div class="personal-information-container">
             <h3 class="personal-name">Camila Garcia</h3>
             <p class="description-proffesion">Marketing</p>
@@ -214,7 +285,9 @@ problem to walk away with the perfect and creative solution.</p>
         </li>
 <!-- Daniel Wilson -->
         <li class="personal-information">
-            <img class="personal-photo" src="./images/img.jpg" alt="Daniel Wilson" width="264" height="260">
+            <img class="personal-photo" 
+            srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
+            src="./images/img.jpg" alt="Daniel Wilson" width="264" height="260">
             <div class="personal-information-container">
             <h3 class="personal-name">Daniel Wilson</h3>
             <p class="description-proffesion">UI Designer</p>
@@ -261,7 +334,13 @@ problem to walk away with the perfect and creative solution.</p>
     <!-- Banking App -->
         <li class="portfolio-items">
             <div class="image-portfolio">
-            <img class="photo-portfolio" src="./images/img-6.jpg" alt="Banking App" width="360" height="300">
+                <picture class="portfolio">
+                    <source media="(min-width: 1158px)" srcset="./images/banking-d.jpg 1x, ./images/banking-d@2x.jpg 2x"/>
+<source media="(min-width: 768px)" srcset="./images/banking-t.jpg 1x, ./images/banking-t@2x.jpg 2x"/>
+<source media="(max-width: 767px)" srcset="./images/banking-m.jpg 1x, ./images/banking-m@2x.jpg 2x"/>
+<img class="photo-portfolio" src="./images/banking-m.jpg" alt="Banking App"/>
+                </picture>
+            
            <p class="text-first-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
         </div>
             <div class="description-portfolio-container">
@@ -272,7 +351,13 @@ problem to walk away with the perfect and creative solution.</p>
         <!-- Cashless Payment -->
  <li class="portfolio-items">
      <div class="image-portfolio">
-            <img class="photo-portfolio" src="./images/img-5.jpg" alt="Cashless Payment" width="360" height="300">
+         <picture class="portfolio">
+                    <source media="(min-width: 1158px)" srcset="./images/payment-d.jpg 1x, ./images/payment-d@2x.jpg 2x"/>
+<source media="(min-width: 768px)" srcset="./images/payment-t.jpg 1x, ./images/payment-t@2x.jpg 2x"/>
+<source media="(max-width: 767px)" srcset="./images/payment-m.jpg 1x, ./images/payment-m@2x.jpg 2x"/>
+<img class="photo-portfolio" src="./images/payment-m.jpg" alt="Cashless Payment"/>
+                </picture>
+           
              <p class="text-first-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="description-portfolio-container">
@@ -283,7 +368,13 @@ problem to walk away with the perfect and creative solution.</p>
         <!-- Meditation App -->
        <li class="portfolio-items">
          <div class="image-portfolio">
-            <img class="photo-portfolio" src="./images/img-4.jpg" alt="Meditation App" width="360" height="300">
+           <picture class="portfolio">
+                    <source media="(min-width: 1158px)" srcset="./images/normalcy-d.jpg 1x, ./images/normalcy-d@2x"/>
+<source media="(min-width: 768px)" srcset="./images/normalcy-t.jpg 1x, ./images/normalcy-t@2x.jpg 2x"/>
+<source media="(max-width: 767px)" srcset="./images/normalcy-m.jpg 1x, ./images/normalcy-m@2x.jpg 2x"/>
+<img class="photo-portfolio" src="./images/normalcy-m.jpg" alt="Meditation App"/>
+                </picture>
+          
             <p class="text-first-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
         </div>
             <div class="description-portfolio-container">
@@ -294,7 +385,13 @@ problem to walk away with the perfect and creative solution.</p>
         <!-- Taxi Service -->
         <li class="portfolio-items">
              <div class="image-portfolio">
-            <img class="photo-portfolio" src="./images/img-7.jpg" alt="Taxi Service" width="360" height="300">
+                <picture class="portfolio">
+                    <source media="(min-width: 1158px)" srcset="./images/nav-d.jpg 1x, ./images/nav-d@2x"/>
+<source media="(min-width: 768px)" srcset="./images/nav-t.jpg 1x, ./images/nav-t@2x.jpg 2x"/>
+<source media="(max-width: 767px)" srcset="./images/nav-m.jpg 1x, ./images/nav-m@2x.jpg 2x"/>
+<img class="photo-portfolio" src="./images/nav-m.jpg" alt="Taxi Service"/>
+                </picture>
+            
             <p class="text-first-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="description-portfolio-container">
@@ -305,7 +402,13 @@ problem to walk away with the perfect and creative solution.</p>
         <!-- Screen Illustrations -->
         <li class="portfolio-items">
             <div class="image-portfolio">
-            <img class="photo-portfolio" src="./images/img-8.jpg" alt="Screen Illustrations" width="360" height="300">
+                  <picture class="portfolio">
+                    <source media="(min-width: 1158px)" srcset="./images/phone-d.jpg 1x, ./images/phone-d@2x"/>
+<source media="(min-width: 768px)" srcset="./images/phone-t.jpg 1x, ./images/phone-t@2x.jpg 2x"/>
+<source media="(max-width: 767px)" srcset="./images/phone-m.jpg 1x, ./images/phone-m@2x.jpg 2x"/>
+<img class="photo-portfolio" src="./images/phone-m.jpg" alt="Screen Illustrations"/>
+                </picture>
+           
 <p class="text-first-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="description-portfolio-container">
@@ -316,7 +419,13 @@ problem to walk away with the perfect and creative solution.</p>
         <!-- Online Courses -->
          <li class="portfolio-items">
              <div class="image-portfolio">
-            <img class="photo-portfolio" src="./images/img-9.jpg" alt="Online Courses" width="360" height="300">
+                <picture class="portfolio">
+                    <source media="(min-width: 1158px)" srcset="./images/girl-d.jpg 1x, ./images/girl-d@2x"/>
+<source media="(min-width: 768px)" srcset="./images/girl-t.jpg 1x, ./images/girl-t@2x.jpg 2x"/>
+<source media="(max-width: 767px)" srcset="./images/girl-m.jpg 1x, ./images/girl-m@2x.jpg 2x"/>
+<img class="photo-portfolio" src="./images/girl-m.jpg" alt="Online Courses"/>
+                </picture>
+
             <p class="text-first-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="description-portfolio-container">
@@ -333,7 +442,7 @@ problem to walk away with the perfect and creative solution.</p>
         <div class="container footer-container">
             <div class="footer-logo-description">
         <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
-        <p class="description-footer">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                 <p class="description-footer">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
 <!-- social-media -->
         <div class="footer-social-media">
@@ -386,7 +495,7 @@ problem to walk away with the perfect and creative solution.</p>
     </div>
     </footer>
 
-<div class="modal-overlay is-open">
+<div class="modal-overlay">
    <div class="modal">
     <button class="starter-button" type="button"><svg class="starter-button-icon" width="8" height="8">
                     <use href = "./images/icons.svg#icon-modal-vector"></use>
