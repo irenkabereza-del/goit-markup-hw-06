@@ -583,7 +583,7 @@ justify-content: center;
 /* our team-tablet */
 @media screen and (min-width: 768px) {
     .our-team-container {
-        width: 584px;
+        min-width: 584px;
     }
 .team-list {
     flex-direction: row;
@@ -847,7 +847,7 @@ border-radius: 4px;
     padding-bottom: 96px;
 }
 .footer-container {
-    width: 584px;
+    min-width: 584px;
    flex-direction: row;
    flex-wrap: wrap;
    gap: 24px;
